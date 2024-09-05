@@ -1,0 +1,12 @@
+{
+  "pages": {
+    "index": {
+      "change": "Đổi thành",
+      "home": "Trang chủ",
+      "page1": "Trang1",
+      "page2": "Trang 2",
+      "page3": "Trang 3",
+      "profile": "Hồ sơ"
+    }
+  }
+}

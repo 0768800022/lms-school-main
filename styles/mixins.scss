@@ -1,0 +1,48 @@
+@mixin smallScreen {
+    @media screen and (max-width: 1216px) {
+        @content;
+    }
+}
+
+@mixin media($breakpoint) {
+    @media (max-width: calc(#{$breakpoint} - 1px)) {
+        @content;
+    }
+}
+
+/* Enable hover only on non-touch devices */
+@mixin hover {
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin reduceMotion {
+    @media (prefers-reduced-motion: reduce) {
+        @content;
+    }
+}
+
+@mixin dark {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
+@mixin light {
+    @media (prefers-color-scheme: light) {
+        @content;
+    }
+}
+
+@mixin disableAnimate {
+    animation: none !important;
+    transition: none !important;
+    @content;
+}

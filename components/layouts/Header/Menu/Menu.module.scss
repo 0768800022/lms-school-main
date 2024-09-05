@@ -1,0 +1,98 @@
+@import '@/styles/mixins.scss';
+@import '@/styles/animates.scss';
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    height: 100%;
+
+    a {
+        height: 100%;
+    }
+
+    .menu-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            display: none;
+            content: "";
+            left: 0;
+            bottom: 0;
+            height: 4px;
+            width: 100%;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            background-color: var(--primary-color);
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            color: var(--text-color);
+        }
+
+        .label {
+            color: var(--text-color);
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &:hover, &.active {
+            &::after {
+                display: block;
+            }
+            .label {
+                color: var(--primary-color);
+            }
+
+            svg {
+                path {
+                    stroke: var(--primary-color);
+                }
+
+                g {
+                    stroke: var(--primary-color);
+                }
+            }
+        }
+
+        // @include smallScreen {
+        //     & {
+        //         min-width: 40px;
+        //     }
+
+        //     .label {
+        //         display: none;
+        //         overflow: hidden;
+        //         width: 0;
+        //         height: 0;
+        //     }
+
+        //     &:hover {
+
+        //         .label {
+        //             display: block;
+        //             width: 100%;
+        //             height: fit-content;
+        //             white-space: nowrap;
+        //             animation: showText 0.3s ease-in;
+        //         }
+        //     }
+        // }
+    }
+
+    // @include smallScreen {
+    //     gap: 8px;
+    // }
+}

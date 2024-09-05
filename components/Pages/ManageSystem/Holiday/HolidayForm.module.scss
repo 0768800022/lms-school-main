@@ -1,0 +1,30 @@
+.area {
+    display: flex;
+    gap: 20px;
+
+    div {
+        flex: 1;
+    }
+}
+
+.form {
+    div[class~="react-select__control"] {
+        height: 56px;
+    }
+}
+
+.statusSwitch {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.swichlabel {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #717171;
+}
+.switch-title {
+    font-size: 14px;
+    color: #717171;
+}

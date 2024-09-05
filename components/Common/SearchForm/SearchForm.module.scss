@@ -1,0 +1,42 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 24px;
+
+    .filter-search {
+        width: 300px;
+    }
+
+    input[type="text"] {
+        --input-height: 4.4rem;
+    }
+
+    div[class~="react-select__control"] {
+        height: 44px;
+        width: 250px;
+    }
+
+
+    .item {
+        border-radius: 8px;
+        border: 1px solid #b8b8b8;
+        display: flex;
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        color: #b8b8b8;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 22px;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+            color: #fff;
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+    }
+}

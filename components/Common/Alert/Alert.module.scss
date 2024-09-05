@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    border-radius: 10px;
+
+    &.error {
+        border: 1px solid #EF5350;
+        background: rgba(251, 205, 205, 0.50);
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        &.error {
+            background-color: #FEA09B;
+        }
+    }
+}

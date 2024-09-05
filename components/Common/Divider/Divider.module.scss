@@ -1,0 +1,51 @@
+.root {
+    // pointer-events: none;
+    border-top: var(--border-size) var(--border-type) var(--border-color);
+
+    &[data-with-label='true']{
+        border: 0;
+    }
+
+    &[data-vertical='true']{
+        border-left: var(--border-size) var(--border-type) var(--border-color);
+        border-top: 0;
+        align-self: stretch;
+        height: auto;
+    }
+
+    .label {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+
+        &[data-position='left']{
+            &::after{
+                content: '';
+                flex: 1 1;
+                border-top: var(--border-size) var(--border-type) var(--border-color);
+            }
+        }
+
+        &[data-position='right']{
+            &::before{
+                content: '';
+                flex: 1 1;
+                border-top: var(--border-size) var(--border-type) var(--border-color);
+            }
+        }
+
+        &[data-position='center']{
+            &::before{
+                content: '';
+                flex: 1 1;
+                border-top: var(--border-size) var(--border-type) var(--border-color);
+            }
+
+            &::after{
+                content: '';
+                flex: 1 1;
+                border-top: var(--border-size) var(--border-type) var(--border-color);
+            }
+        }
+    }
+}

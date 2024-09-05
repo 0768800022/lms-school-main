@@ -1,0 +1,139 @@
+.wrapper {
+    margin-top: 36px;
+    margin-bottom: 48px;
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .content {
+            width: 75%;
+            padding: 24px 30px;
+            border-radius: 32px;
+            box-shadow: 0px 3px 12px 0px rgba(47, 83, 109, 0.12);
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            .title {
+                text-align: center;
+                color: #1D1D1D;
+                font-size: 2.4rem;
+                font-weight: 500;
+                line-height: 32px;
+            }
+
+            .avatar {
+                position: relative;
+                width: 96px;
+                height: 96px;
+                margin: auto;
+                cursor: pointer;
+
+                img {
+                    width: 96px;
+                    height: 96px;
+                    object-fit: contain;
+                    border-radius: 100px;
+                }
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+
+            .form {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                & > div {
+                    width: calc(50% - 20px);
+                }
+
+                .role {
+                    display: flex;
+                    align-items: center;
+                    height: 56px;
+                    border-radius: var(--spacing-8px, 8px);
+                    border: 1px solid #CECECE;
+                    background: rgba(0, 0, 0, 0.05);
+                    padding-left: 1.6rem;
+                    color: var(--text-color);
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 18.4px;
+                }
+
+                .group {
+                    display: flex;
+                    gap: 20px;
+
+                    > div {
+                        flex: 1;
+                    }
+                }
+
+                .password {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 56px;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    border: 1px solid #D6D6D6;
+
+                    .left {
+                        display: flex;
+                        flex-direction: column;
+
+                        .label {
+                            color: var(--text-color);
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            line-height: 18.4px;
+                        }
+
+                        .dot-password {
+                            flex: 1;
+                            display: flex;
+                            gap: 4px;
+                            align-items: center;
+                            svg {
+                                width: 8px;
+                                height: 8px;
+                            }
+                        }
+                    }
+
+                    .change-password {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+
+                        svg {
+                            width: 26px;
+                            height: 26px;
+                        }
+                    }
+                }
+
+                div[class~="react-select__control"] {
+                    height: 56px;
+                }
+
+                div[class~="react-select__value-container"] {
+                    height: 56px;
+                }
+
+                button {
+                    min-width: 200px;
+                }
+            }
+        }
+    }
+}

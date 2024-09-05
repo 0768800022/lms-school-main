@@ -1,0 +1,46 @@
+.menu-list {
+    z-index: 2;
+
+    .react-select__value-container {
+        padding-top: 0.75rem;
+    }
+}
+
+.arrow-down {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+
+    &.is-primary {
+        path {
+            fill: var(--primary-color);
+            stroke: var(--primary-color);
+        }
+    }
+}
+
+.new-placeholder {
+    position: absolute;
+    margin: 0 !important;
+}
+
+.new-single-value {
+    transform: translateY(10px);
+    display: block;
+}
+
+.icon-remove {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        path {
+            fill: rgba(0, 0, 0, 0.88);
+        }
+    }
+
+    path {
+        fill: rgba(0, 0, 0, 0.45);
+    }
+}

@@ -1,0 +1,11 @@
+@keyframes showText {
+    from {
+        width: 0px;
+        height: 0;
+    }
+
+    to {
+        height: 16px;
+        width: 100%;
+    }
+}

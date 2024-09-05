@@ -1,0 +1,38 @@
+.wrapper {
+    padding-top: 2.4rem;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        .select-value {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+            div:nth-last-child {
+                width: 160px;
+            }
+
+            div:first-child {
+                flex: 1;
+            }
+        }
+
+        .label {
+            color: var(--text-color);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        .select-role {
+            display: flex;
+            gap: 10px;
+
+            div {
+                flex: 1;
+            }
+        }
+    }
+}

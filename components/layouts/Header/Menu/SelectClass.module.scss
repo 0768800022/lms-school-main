@@ -1,0 +1,117 @@
+.dropdown-target {
+    border-radius: 0.8rem;
+    border: 1px solid #d6d6d6;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    max-width: 18rem;
+    cursor: pointer;
+}
+
+.target-content {
+    min-width: 0;
+}
+
+.selected-type {
+    font-size: 1.2rem;
+}
+
+.selected-value {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.icon-arrow-down {
+    width: 2rem;
+    height: 2rem;
+    color: #a7a7a7;
+}
+
+.dropdown {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 12px 20px 0px rgba(9, 9, 9, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    min-width: 24rem;
+}
+
+.dropdown-group {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: #1d1d1d;
+    padding: 1rem;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 1rem 1rem 1rem 1.6rem;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &[data-selected="true"] {
+        background: rgba(12, 166, 237, 0.1);
+    }
+
+    @include hover {
+        background: rgba(12, 166, 237, 0.1);
+    }
+
+    > li {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        color: #717171;
+    }
+}
+
+.icon-info {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #0ca6ed;
+}
+
+.tooltip {
+    border-radius: 1.6rem;
+    background: #fff;
+    box-shadow: 0px 12px 20px 0px rgba(9, 9, 9, 0.1);
+    padding: 2.4rem;
+    min-width: 40rem;
+    max-width: 45rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.tooltip-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    color: #1d1d1d;
+}
+
+.tooltip-content {
+    padding-top: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 2.4rem;
+}
+
+.tooltip-label {
+    color: #717171;
+    flex-basis: 50%;
+}
+
+.tooltip-value {
+    font-size: #1d1d1d;
+    flex: auto;
+}

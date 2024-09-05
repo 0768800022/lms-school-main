@@ -1,0 +1,42 @@
+.selectedWeekWrapper {
+    height: 4.4rem;
+
+    .btnSeekWeek {
+        height: 4.4rem;
+        width: 4.4rem;
+        padding: 0;
+        background-color: #fff;
+        border: 1px solid #0ca6ed;
+
+        &[data-left] {
+            svg {
+                transform: rotate(90deg);
+            }
+        }
+
+        &[data-right] {
+            svg {
+                transform: rotate(-90deg);
+            }
+        }
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+
+            path {
+                fill: #0ca6ed;
+                stroke: #0ca6ed;
+            }
+        }
+    }
+
+    .selectedWeek {
+        font-weight: 400;
+    }
+
+    .weekPicker {
+        height: 100%;
+        width: 150px;
+    }
+}

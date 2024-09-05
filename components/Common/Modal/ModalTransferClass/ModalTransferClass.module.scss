@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .title {
+        color: #1D1D1D;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .description {
+        color: var(--text-color);
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .group {
+            display: flex;
+            gap: 24px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+
+            button {
+                min-width: 140px;
+            }
+        }
+    }
+}

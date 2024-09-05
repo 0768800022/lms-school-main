@@ -1,0 +1,125 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .title {
+        color: #1d1d1d;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .description {
+        color: var(--text-color);
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 24px;
+
+        .filter-search {
+            width: 350px;
+        }
+
+        .filter-status {
+            width: 180px;
+        }
+
+        input[type="text"] {
+            --input-height: 4.4rem;
+        }
+
+        .carousel {
+            width: 100%;
+        }
+
+        .item {
+            border-radius: 8px;
+            border: 1px solid #b8b8b8;
+            display: flex;
+            padding: 10px 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            color: #b8b8b8;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 22px;
+            cursor: pointer;
+
+            &:hover,
+            &.active {
+                color: #fff;
+                background-color: var(--primary-color);
+                border-color: var(--primary-color);
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-height: calc(100vh - 400px);
+        overflow: auto;
+        padding-right: 5px;
+
+        & > div {
+            height: 56px;
+        }
+
+        .group {
+            display: flex;
+            gap: 24px;
+            height: 56px;
+
+            > div {
+                flex: 1;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        gap: 16px;
+
+        .left, .right {
+            flex: 1;
+        }
+
+        .transfer-title {
+            color:  #717171;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 2.4rem;
+            padding-bottom: 1.6rem;
+        }
+
+        .box-action-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+
+            button {
+                white-space: nowrap;
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.actions {
+    button {
+        min-height: 4.4rem;
+    }
+}

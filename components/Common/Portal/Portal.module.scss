@@ -1,0 +1,20 @@
+.portal {
+    a {
+        color: inherit;
+        text-decoration: none !important;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: inherit;
+        }
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    input {
+        background: transparent;
+    }
+}

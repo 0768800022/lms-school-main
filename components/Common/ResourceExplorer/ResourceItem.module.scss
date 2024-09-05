@@ -1,0 +1,50 @@
+.item-wrapper {
+    .item {
+        display: flex;
+        flex-flow: column;
+        gap: .6rem;
+        width: 100%;
+        border-radius: 16px;
+        padding: 1.6rem;
+
+        @include hover {
+            background: rgba(12, 166, 237, 0.1);
+        }
+    }
+
+    .item-name {
+        color: #717171;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+
+    .item-capacity {
+        color: #a7a7a7;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+}
+
+.icon-wrapper {
+    .icon {
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+        &[data-preview-able="true"] {
+            max-width: 9rem;
+        }
+    }
+}

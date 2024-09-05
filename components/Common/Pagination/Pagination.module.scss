@@ -1,0 +1,60 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .info {
+        color: var(--text-color);
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .paging {
+        display: flex;
+        gap: 8px;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 0.5px solid rgba(0, 0, 0, 0.12);
+            color: #1D1D1D;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: normal;
+            cursor: pointer;
+
+            &:hover:not(.disabled, .active), &.active {
+                background-color: var(--primary-color);
+                color: #fff;
+
+                svg {
+                    g, path {
+                        stroke: #fff;
+                    }
+                }
+            }
+
+            svg {
+                width: 16px;
+                height: 16px;
+
+                g, path {
+                    stroke: var(--text-color);
+                }
+            }
+
+            &.disabled {
+                cursor: default;
+                svg {
+                    g, path {
+                        stroke: #C7C7C7;
+                    }
+                }
+            }
+        }
+    }
+}

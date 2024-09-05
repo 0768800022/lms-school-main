@@ -1,0 +1,4 @@
+.root {
+    margin: auto;
+    width: min(var(--max-width, var(--container-width)), 100% - (var(--margin, 1.6rem) * 2));
+}

@@ -1,0 +1,19 @@
+.root {
+	.viewport {
+		overflow: hidden;
+
+		.container {
+			backface-visibility: hidden;
+			display: flex;
+			touch-action: pan-y;
+            margin-left: calc(var(--slide-spacing) * -1);
+
+			.slide {
+				flex: 0 0 var(--slice-size, auto);
+				min-width: 0;
+				padding-left: var(--slide-spacing);
+				position: relative;
+			}
+		}
+	}
+}

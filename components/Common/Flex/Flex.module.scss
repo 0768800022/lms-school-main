@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    // gap: var(--gap, 0);
+    // column-gap: var(--column-gap, 0);
+    // row-gap: var(--row-gap, 0);
+    // flex-direction: var(--direction, initial);
+    // flex-wrap: var(--wrap, initial);
+    // justify-content: var(--justify, initial);
+    // align-items: var(--align, initial);
+
+    &[data-full-width="true"] {
+        width: 100%;
+    }
+}

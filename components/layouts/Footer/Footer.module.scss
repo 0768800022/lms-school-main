@@ -1,0 +1,14 @@
+.wrapper {
+    height: var(--footer-height);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    // background: #FCFCFD;
+
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 6px;
+}

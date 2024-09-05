@@ -1,0 +1,236 @@
+.wrapper {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+
+        .title {
+            color: #1D1D1D;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 38px;
+        }
+
+        .action {
+            display: flex;
+            gap: 16px;
+
+            .select {
+                width: 220px;
+                white-space: nowrap;
+
+                .import {
+                    color: var(--primary-color);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    border-radius: 8px;
+                    border: 1px solid var(--primary-color);
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 16px;
+                    background: #fff;
+                    gap: 12px;
+                    cursor: pointer;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+
+                        path, g {
+                            fill: var(--primary-color);
+                            stroke: var(--primary-color);
+                        }
+                    }
+                }
+            }
+
+            button {
+                height: 40px;
+            }
+        }
+    }
+
+    .error-import {
+        margin-top: 24px;
+        font-size: 1.4rem;
+
+        svg {
+            color: #EF5350;
+        }
+
+        .detail {
+            color: var(--primary-color);
+            text-decoration: underline;
+            cursor: pointer;
+            margin-left: 4px;
+        }
+    }
+
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 24px;
+
+        input[type="text"] {
+            --input-height: 4.4rem;
+        }
+
+        div[class~='react-select__control'] {
+            height: 44px;
+            width: 250px;
+
+            div[class~='react-select__value-container'] {
+                height: 44px;
+                padding: 0.8rem 0rem 1rem 1.2rem;
+            }
+        }
+
+        .carousel {
+            width: 100%;
+        }
+
+        .viewport {
+            position: relative;
+
+            .arrow-right {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                right: 0;
+                top: 0;
+                width: 45px;
+                background: linear-gradient(90deg, rgba(252, 252, 253, 0.10) 0%, #FCFCFD 79.23%);
+                height: 100%;
+                cursor: pointer;
+                color: #B8B8B8;
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        .item {
+            border-radius: 8px;
+            border: 1px solid #B8B8B8;
+            display: flex;
+            padding: 10px 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            color: #B8B8B8;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 22px;
+            cursor: pointer;
+
+            &:hover, &.active {
+                color: #fff;
+                background-color: var(--primary-color);
+                border-color: var(--primary-color);
+            }
+        }
+    }
+
+    .table {
+        margin-top: 24px;
+
+        .code {
+            max-width: 140px;
+            white-space: nowrap;
+        }
+
+        .text-line {
+            white-space: nowrap;
+            max-width: 140px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .fullname {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 150px;
+        }
+
+        .email {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 230px;
+            display: flex;
+            align-items: center;
+
+            .email-pre {
+                display: inline-block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 200px;
+            }
+        }
+
+        .roles {
+            max-width: 140px;
+        }
+    }
+
+    .pagination {
+        margin-top: 32px;
+    }
+}
+
+.content {
+    width: 220px;
+    padding: 8px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 12px 36px 0px rgba(0, 0, 0, 0.05);
+
+    .import-item {
+        padding: 12px 16px;
+        color: var(--text-color);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+
+        &:hover {
+            border-radius: 8px;
+            background-color:rgba(0, 149, 218, 0.10);
+        }
+    }
+}
+
+
+.tooltip {
+    font-size: 14px;
+    color: var(--text-color);
+    min-width: 200px;
+    max-width: 400px;
+    padding: 24px;
+    border-radius: 12px;
+    background: #FFF;
+    line-height: 24px;
+    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+
+    .label {
+        word-break: break-word;
+        font-weight: 600;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: disc;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}

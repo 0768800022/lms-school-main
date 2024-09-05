@@ -1,0 +1,121 @@
+.table-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 23em;
+    border-bottom: 1px solid #f7f8fc;
+    max-height: calc(100vh - 400px);
+
+    .table-header {
+        min-height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 24px;
+        background: var(--primary-color);
+        border-radius: 12px 12px 0px 0px;
+
+        .action {
+            width: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .student-code {
+            width: 100px;
+        }
+
+        .student-name {
+            width: 200px;
+        }
+    }
+
+    .table-body {
+        overflow: hidden;
+        min-height: min(400px, calc(100vh - 500px));
+        border: 1px solid #EAECF0;
+        border-radius: 0px 0px 12px 12px;
+
+        &.box {
+            border: 1px dashed #7660fe;
+        }
+
+        .table-row {
+            display: flex;
+            min-height: 72px;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+            background: #fff;
+            cursor: pointer;
+            border-bottom: 1px solid #EAECF0;
+            color: var(--text-color);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 24px;
+
+            &.disabled {
+                cursor: not-allowed;
+
+                .action {
+                    svg {
+                        cursor: no-drop;
+                    }
+                }
+            }
+
+            &:hover {
+                background: rgba(0, 149, 218, 0.10);
+            }
+
+            .action {
+                width: 70px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+
+                svg {
+                    cursor: pointer;
+                }
+            }
+
+            .student-code {
+                width: 100px;
+            }
+
+            .student-name {
+                width: 200px;
+
+                > :first-child {
+                    color: var(--primary-color);
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 24px;
+                    display: block;
+                }
+            }
+        }
+
+        .no-data {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-color);
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}

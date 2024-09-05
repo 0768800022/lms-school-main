@@ -1,0 +1,29 @@
+.resource-explorer {
+    display: flex;
+    flex-flow: column;
+    gap: 1.2rem;
+    padding-top: 1.2rem;
+}
+
+.list-wrapper {
+    min-height: 43.4rem;
+    padding: 1.6rem;
+    border-radius: 12px;
+    border: 1px solid #eaecf0;
+    background: #fff;
+    box-shadow:
+        0px 1px 3px 0px rgba(16, 24, 40, 0.1),
+        0px 1px 2px 0px rgba(16, 24, 40, 0.06);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.item {
+    &[data-selected="true"] {
+        background: rgba(12, 166, 237, 0.1);
+    }
+}

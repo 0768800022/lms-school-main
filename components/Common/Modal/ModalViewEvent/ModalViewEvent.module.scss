@@ -1,0 +1,57 @@
+.wrapper {
+    width: 720px;
+
+    .title {
+        color: #1d1d1d;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 32px;
+
+
+        span {
+            color: #b8b8b8;
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 32px;
+        }
+    }
+
+    .action {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-top: 32px;
+    }
+}
+
+.healing {
+
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #717171;
+
+
+
+}
+
+
+.label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #717171;
+}
+.content {
+    font-size: 16px;
+    font-weight: 700;
+}
+.happening {
+    color: #3EB44A;
+}
+.before {
+    color: rgba(252, 175, 23, 1);
+}
+.after {
+    color: rgba(255, 115, 99, 1);
+}

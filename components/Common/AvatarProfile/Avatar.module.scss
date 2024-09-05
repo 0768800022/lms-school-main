@@ -1,0 +1,25 @@
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #cbf3fb;
+    border: 1px solid #43c0fa;
+    color: var(--primary-color);
+    font-size: 14px;
+    border-radius: 50%;
+    font-weight: 600;
+    &-multi{
+        background-color: var(--primary-color);
+        color : white;
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
